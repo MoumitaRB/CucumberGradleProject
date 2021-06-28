@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="73.041239">
+<testcase classname="OrangeHRM tagging concept" name="Verify Login test" time="20.485384">
+<system-out><![CDATA[Given User launch Chrome browser............................................passed
+When User opens OrangeHRM homepage..........................................passed
+And User enters username as "Admin" and password as "admin123"..............passed
+And User  clicks on login button............................................passed
+Then User must successfully verify dashboard page...........................passed
+Then Close browser..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="OrangeHRM tagging concept" name="Search employee from directory" time="27.21715">
+<system-out><![CDATA[Given User launch Chrome browser............................................passed
+When User opens OrangeHRM homepage..........................................passed
+And User enters username as "Admin" and password as "admin123"..............passed
+And User  clicks on login button............................................passed
+Then User click on directory tab............................................passed
+And User enter employee name in search box..................................passed
+And User click on search button.............................................passed
+Then User verifying employee name in the table..............................passed
+And Close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="OrangeHRM tagging concept" name="Verifying job title of the searched employee" time="25.338705">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:87)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:42)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:53)&#13;&#10;&#9;at stepDefinition.OrangeHRMTaggingSteps.search_the_job_title_from_the_table(OrangeHRMTaggingSteps.java:142)&#13;&#10;&#9;at ✽.Search the job title from the table(file:/C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature:36)&#13;&#10;"><![CDATA[Given User launch Chrome browser............................................passed
+When User opens OrangeHRM homepage..........................................passed
+And User enters username as "Admin" and password as "admin123"..............passed
+And User  clicks on login button............................................passed
+Then User clicks on PIM tab.................................................passed
+And User clicks on Employee List tab........................................passed
+And User enters employee name in employee name box..........................passed
+Then User click on search button............................................passed
+Then Search the job title from the table....................................failed
+And Close browser...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinition.OrangeHRMTaggingSteps.search_the_job_title_from_the_table(OrangeHRMTaggingSteps.java:142)
+	at ✽.Search the job title from the table(file:/C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature:36)
+]]></failure>
+</testcase>
+</testsuite>

@@ -1,0 +1,458 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-28T19:32:51.769Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6976171000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hookssteps.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify Login test",
+        "description": "",
+        "id": "orangehrm-tagging-concept;verify-login-test",
+        "after": [
+          {
+            "result": {
+              "duration": 761716600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hookssteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1109081400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch Chrome browser",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3769727300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User opens OrangeHRM homepage",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_opens_OrangeHRM_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169756500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "OrangeHRMTaggingSteps.user_enters_username_as_and_password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3935434500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User  clicks on login button",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3020578600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User must successfully verify dashboard page",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_must_successfully_verify_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 718637500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Close browser",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-28T19:33:12.256Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5972863900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hookssteps.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Search employee from directory",
+        "description": "",
+        "id": "orangehrm-tagging-concept;search-employee-from-directory",
+        "after": [
+          {
+            "result": {
+              "duration": 734456500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hookssteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1095057800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User launch Chrome browser",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3804191000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User opens OrangeHRM homepage",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_opens_OrangeHRM_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 157816400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "OrangeHRMTaggingSteps.user_enters_username_as_and_password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3912007000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User  clicks on login button",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5161573900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on directory tab",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_click_on_directory_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 105912900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enter employee name in search box",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_enter_employee_name_in_search_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2491888200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click on search button",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3051073400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User verifying employee name in the table",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_verifying_employee_name_in_the_table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 718654200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Close browser",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-28T19:33:39.475Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5866889800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hookssteps.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verifying job title of the searched employee",
+        "description": "",
+        "id": "orangehrm-tagging-concept;verifying-job-title-of-the-searched-employee",
+        "after": [
+          {
+            "result": {
+              "duration": 718632400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hookssteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1126484000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User launch Chrome browser",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3789972100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User opens OrangeHRM homepage",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_opens_OrangeHRM_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174395900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User enters username as \"Admin\" and password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "OrangeHRMTaggingSteps.user_enters_username_as_and_password_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3927193600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User  clicks on login button",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2646344900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User clicks on PIM tab",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_clicks_on_PIM_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2476428400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User clicks on Employee List tab",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_clicks_on_Employee_List_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2117441600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User enters employee name in employee name box",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_enters_employee_name_in_employee_name_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2378069900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User click on search button",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.user_click_on_search_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepDefinition.OrangeHRMTaggingSteps.search_the_job_title_from_the_table(OrangeHRMTaggingSteps.java:142)\r\n\tat ✽.Search the job title from the table(file:/C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature:36)\r\n",
+              "duration": 103558000,
+              "status": "failed"
+            },
+            "line": 36,
+            "name": "Search the job title from the table",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.search_the_job_title_from_the_table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 225300,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Close browser",
+            "match": {
+              "location": "OrangeHRMTaggingSteps.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@End2End"
+          }
+        ]
+      }
+    ],
+    "name": "OrangeHRM tagging concept",
+    "description": "",
+    "id": "orangehrm-tagging-concept",
+    "keyword": "Feature",
+    "uri": "file:/C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature",
+    "tags": []
+  }
+]

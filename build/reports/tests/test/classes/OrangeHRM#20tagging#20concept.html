@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class OrangeHRM tagging concept</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class OrangeHRM tagging concept</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; OrangeHRM tagging concept</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m13.04s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Verifying job title of the searched employee"></a>
+<h3 class="failures">Verifying job title of the searched employee</h3>
+<span class="code">
+<pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinition.OrangeHRMTaggingSteps.search_the_job_title_from_the_table(OrangeHRMTaggingSteps.java:142)
+	at ✽.Search the job title from the table(file:/C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature:36)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Search employee from directory</td>
+<td class="success">27.218s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Verify Login test</td>
+<td class="success">20.486s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Verifying job title of the searched employee</td>
+<td class="failures">25.340s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Feature: OrangeHRM tagging concept
+
+  @Sanity
+  Scenario: Verify Login test                                      ?[90m# /C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature:4?[0m
+    ?[32mGiven ?[0m?[32mUser launch Chrome browser?[0m                               ?[90m# OrangeHRMTaggingSteps.user_launch_Chrome_browser()?[0m
+    ?[32mWhen ?[0m?[32mUser opens OrangeHRM homepage?[0m                             ?[90m# OrangeHRMTaggingSteps.user_opens_OrangeHRM_homepage()?[0m
+    ?[32mAnd ?[0m?[32mUser enters username as ?[0m?[32m?[1m&quot;Admin&quot;?[0m?[32m and password as ?[0m?[32m?[1m&quot;admin123&quot;?[0m ?[90m# OrangeHRMTaggingSteps.user_enters_username_as_and_password_as(String,String)?[0m
+    ?[32mAnd ?[0m?[32mUser  clicks on login button?[0m                               ?[90m# OrangeHRMTaggingSteps.user_clicks_on_login_button()?[0m
+    ?[32mThen ?[0m?[32mUser must successfully verify dashboard page?[0m              ?[90m# OrangeHRMTaggingSteps.user_must_successfully_verify_dashboard_page()?[0m
+    ?[32mThen ?[0m?[32mClose browser?[0m                                             ?[90m# OrangeHRMTaggingSteps.close_browser()?[0m
+
+  @Regression
+  Scenario: Search employee from directory                         ?[90m# /C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature:13?[0m
+    ?[32mGiven ?[0m?[32mUser launch Chrome browser?[0m                               ?[90m# OrangeHRMTaggingSteps.user_launch_Chrome_browser()?[0m
+    ?[32mWhen ?[0m?[32mUser opens OrangeHRM homepage?[0m                             ?[90m# OrangeHRMTaggingSteps.user_opens_OrangeHRM_homepage()?[0m
+    ?[32mAnd ?[0m?[32mUser enters username as ?[0m?[32m?[1m&quot;Admin&quot;?[0m?[32m and password as ?[0m?[32m?[1m&quot;admin123&quot;?[0m ?[90m# OrangeHRMTaggingSteps.user_enters_username_as_and_password_as(String,String)?[0m
+    ?[32mAnd ?[0m?[32mUser  clicks on login button?[0m                               ?[90m# OrangeHRMTaggingSteps.user_clicks_on_login_button()?[0m
+    ?[32mThen ?[0m?[32mUser click on directory tab?[0m                               ?[90m# OrangeHRMTaggingSteps.user_click_on_directory_tab()?[0m
+    ?[32mAnd ?[0m?[32mUser enter employee name in search box?[0m                     ?[90m# OrangeHRMTaggingSteps.user_enter_employee_name_in_search_box()?[0m
+    ?[32mAnd ?[0m?[32mUser click on search button?[0m                                ?[90m# OrangeHRMTaggingSteps.user_click_on_search_button()?[0m
+    ?[32mThen ?[0m?[32mUser verifying employee name in the table?[0m                 ?[90m# OrangeHRMTaggingSteps.user_verifying_employee_name_in_the_table()?[0m
+    ?[32mAnd ?[0m?[32mClose browser?[0m                                              ?[90m# OrangeHRMTaggingSteps.close_browser()?[0m
+
+  @End2End
+  Scenario: Verifying job title of the searched employee           ?[90m# /C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature:27?[0m
+    ?[32mGiven ?[0m?[32mUser launch Chrome browser?[0m                               ?[90m# OrangeHRMTaggingSteps.user_launch_Chrome_browser()?[0m
+    ?[32mWhen ?[0m?[32mUser opens OrangeHRM homepage?[0m                             ?[90m# OrangeHRMTaggingSteps.user_opens_OrangeHRM_homepage()?[0m
+    ?[32mAnd ?[0m?[32mUser enters username as ?[0m?[32m?[1m&quot;Admin&quot;?[0m?[32m and password as ?[0m?[32m?[1m&quot;admin123&quot;?[0m ?[90m# OrangeHRMTaggingSteps.user_enters_username_as_and_password_as(String,String)?[0m
+    ?[32mAnd ?[0m?[32mUser  clicks on login button?[0m                               ?[90m# OrangeHRMTaggingSteps.user_clicks_on_login_button()?[0m
+    ?[32mThen ?[0m?[32mUser clicks on PIM tab?[0m                                    ?[90m# OrangeHRMTaggingSteps.user_clicks_on_PIM_tab()?[0m
+    ?[32mAnd ?[0m?[32mUser clicks on Employee List tab?[0m                           ?[90m# OrangeHRMTaggingSteps.user_clicks_on_Employee_List_tab()?[0m
+    ?[32mAnd ?[0m?[32mUser enters employee name in employee name box?[0m             ?[90m# OrangeHRMTaggingSteps.user_enters_employee_name_in_employee_name_box()?[0m
+    ?[32mThen ?[0m?[32mUser click on search button?[0m                               ?[90m# OrangeHRMTaggingSteps.user_click_on_search_button()?[0m
+    ?[31mThen ?[0m?[31mSearch the job title from the table?[0m                       ?[90m# OrangeHRMTaggingSteps.search_the_job_title_from_the_table()?[0m
+      ?[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinition.OrangeHRMTaggingSteps.search_the_job_title_from_the_table(OrangeHRMTaggingSteps.java:142)
+	at ?.Search the job title from the table(file:/C:/IdeaProjects/SeleniumCucumber/Features/OrangeHRMTagging.feature:36)
+?[0m
+    ?[36mAnd ?[0m?[36mClose browser?[0m                                              ?[90m# OrangeHRMTaggingSteps.close_browser()?[0m
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 28548
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1624908773.496][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+Jun 28, 2021 2:32:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 40779
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1624908779.819][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+Jun 28, 2021 2:32:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 15877
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1624908793.311][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+Jun 28, 2021 2:33:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 36639
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1624908799.285][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+Jun 28, 2021 2:33:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 7904
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1624908820.534][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+Jun 28, 2021 2:33:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 3863
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1624908826.414][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+Jun 28, 2021 2:33:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at Jun 28, 2021 2:34:05 PM</p>
+</div>
+</div>
+</body>
+</html>
